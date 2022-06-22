@@ -1,0 +1,61 @@
+$text-color: black;
+$background-color: white;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.card__header__image {
+    width: 100vw;
+}
+
+.card__main {
+    margin: 2rem;
+
+    .card__main__header {
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    .card__main__paragraph {
+        padding-top: 2rem;
+        font-size: 1.1rem;
+        line-height: 1.9rem;
+    }
+
+    .card__main__div {
+        padding-top: 3.7rem;
+        .card__main__div__button {
+            text-decoration: none;
+            color: $text-color;
+            border: 2px solid $text-color;
+            padding: 0.8rem;
+            padding-inline: 1.6rem;
+            margin-right: 1rem;
+
+            &:hover {
+                background-color: $text-color;
+                color: $background-color;
+            }
+        }
+        .card__main__div__dark-button {
+            background-color: $text-color;
+            color: $background-color;
+            text-decoration: none;
+            border: 2px solid $text-color;
+            padding: 0.8rem;
+            padding-inline: 1.6rem;
+            margin-right: 1rem;
+
+            &--highlight:hover {
+                background-color: $background-color;
+                color: $text-color;
+            }
+        }
+    }
+
+    
+}
