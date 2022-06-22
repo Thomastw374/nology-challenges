@@ -1,6 +1,8 @@
 $text-color: black;
 $background-color: white;
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +10,16 @@ $background-color: white;
     font-family: sans-serif;
 }
 
+body {
+    display: flex;
+}
+
+.card {
+    height: 33%;
+    margin: 1rem;
+}
 .card__header__image {
-    width: 100vw;
+    width: 100%;
 }
 
 .card__main {
