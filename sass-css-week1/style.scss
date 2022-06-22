@@ -15,15 +15,41 @@ body {
 }
 
 .card {
-    height: 33%;
     margin: 1rem;
+    &--border { 
+        border: 0.2rem solid black;
+    }
 }
 .card__header__image {
     width: 100%;
 }
 
+
+
 .card__main {
     margin: 2rem;
+
+    .card__main__canadaheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        
+        .card__main__canadaheader__tags__tag {
+            border: 2px lightgrey solid;
+            border-radius: 28%;
+            padding: 0.1rem;
+            background-color: lightgrey;
+            padding: 0.4rem;
+            font-weight: bold;
+
+            &--highlight {
+                background-color: lightgreen;
+                border: 2px lightgreen;
+            }
+        }
+
+
+    }
 
     .card__main__header {
         font-weight: bold;
